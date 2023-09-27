@@ -2,6 +2,7 @@ import { NextResponse } from 'next/server';
 
 export async function middleware(req) {
   const { ip, nextUrl } = req;
+  console.log(req)
 
   nextUrl.searchParams.set('clientIp', ip);
 
