@@ -1,5 +1,6 @@
-import { NextRequest, NextResponse } from "next/server";
+import { NextResponse } from "next/server";
 import { headers } from "next/headers";
+import { userAgent } from "next/server";
 
 export async function GET(req) {
   const { ua } = userAgent(req);
